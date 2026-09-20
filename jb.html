@@ -1,9 +1,16 @@
 <!doctype html>
-<html lang="en" manifest="cache.appcache">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>RAW GAME</title>
+    <script>
+      (function () {
+        if (/PlayStation\s*4/i.test(navigator.userAgent)) {
+          document.documentElement.setAttribute("manifest", "cache.appcache");
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="includes/style.css" />
     <style>
       html,

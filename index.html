@@ -1,21 +1,16 @@
-<link rel="stylesheet" href="includes/style.css">
-
-<header class="site-header">
-    <div class="header-content">
-        <img src="includes/NABEELLOGO.svg" alt="Nabil's Logo" class="header-logo">
-        <div class="header-titles">
-            <h1>PS4 Jailbreak</h1>
-        </div>
-    </div>
-</header>
-<h3 id="UA">Detecting firmware...</h3>
-<hr>
 <!DOCTYPE html>
-<html lang="en" manifest="cache.appcache">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Nabile Office</title>
+<script>
+(function () {
+  if (/PlayStation\s*4/i.test(navigator.userAgent)) {
+    document.documentElement.setAttribute("manifest", "cache.appcache");
+  }
+})();
+</script>
 <style>
   html, body { margin:0; padding:0; background:#f2f2f3; color:#c8ced8;
                font:15px/1.45 "Segoe UI", system-ui, sans-serif; }
